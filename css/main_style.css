@@ -29,7 +29,7 @@ body {
 }
 
 #wrap {
-    min-width: 1320px;
+    min-width: 1360px;
     overflow: hidden;
 
 }
@@ -90,7 +90,7 @@ body {
     height: 180px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50px 50px 0 0;
-    padding: 23px 60px;
+    padding: 23px 50px;
     box-sizing: border-box;
 
 }
@@ -116,7 +116,7 @@ body {
 .banner_playBtn {
     float: left;
     display: inline-block;
-    margin: 40px 50px 0 80px;
+    margin: 40px 80px 0 80px;
     opacity: 100%;
 }
 
@@ -124,27 +124,30 @@ body {
     opacity: 60%;
 
 }
-
-
-.banner_PL_list a {
-    margin: 0 20px 10px 45px;
+.banner_PL_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner_PL_list li a {
+    width: 60px;
+    display: inline-block;
+    margin-bottom: 4px;
 }
 
 .banner_PL_list li {
-    display: flex;
-    flex-wrap: wrap;
+    width: 240px;
+    font-size: 0;
 
 }
-
-.banner_PL_list p {
-    margin-top: 4px;
-    color: #BBBBBB;
+.banner_PL_list li p{
+    display: inline-block;
     width: 120px;
+    margin: 0 40px 7px 15px;
+    color: #BBBBBB;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 13px;
-
 }
 
 .banner_PL_list span {
@@ -157,11 +160,7 @@ body {
 /* mainbanner_E */
 /* container_S */
 #container {
-    width: 1920px;
-    margin: 0 auto;
     overflow: hidden;
-
-
 }
 
 /* Newsong_S*/
@@ -326,8 +325,6 @@ body {
 /*Main-RecommendPL_E */
 /* Main-SelectPL_S */
 .Main-SelectPL_wrap {
-    width: 1920px;
-    margin: 0 auto;
     height: 700px;
     background: url(../images/main/swimming-pool.png) no-repeat top center;
     overflow: hidden;
@@ -406,10 +403,15 @@ body {
 }
 
 .Main-eventbanner1 {
-    width: 1920px;
-    margin: 0 auto;
+    height: 600px;
+    position: relative;
 }
-
+.Main-eventbanner1 img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
 /* Main-SelectPL_E */
 /* Main-TodayDJ_section_S */
 .Main-TodayDJ_section {
@@ -629,11 +631,15 @@ body {
 
 /* Main-PopularVideo_E */
 .Main-eventbanner2 {
-    width: 1920px;
-    margin: 0 auto;
+    height: 350px;
     position: relative;
 }
-
+.Main-eventbanner2 img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
 .Main-eventbanner2 a {
     display: inline-block;
     padding: 10px 30px;
