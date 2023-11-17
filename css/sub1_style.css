@@ -1,0 +1,280 @@
+
+@charset "utf-8";
+
+@font-face {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333333;
+}
+
+#wrap {
+    min-width: 1360px;
+    overflow: hidden;
+
+}
+#header_wrap {
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gnb li a:hover, .gnb li a.on{
+    color: #93D4F3;
+}
+/* sub1 */
+
+.SODAchart-banner{
+    background: url(../images/sub/1.SODAchart/1.Banner/sodachart_banner.png) no-repeat top center;
+    height: 750px;
+    position: relative;
+
+}
+.SODAchart-banner p{
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: #F6F7FC;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+#container{
+    position: relative;
+}
+/* TodayTop3_S*/
+.TodayTop3{
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ranking-box{
+    width: 350px;
+    height: 450px;
+    box-shadow: 3px 3px 6px #D2D2D2;
+    border-radius: 200px 200px 0 0;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffffff;
+}
+.ranking_num{
+    font-size: 45px;
+    float: left;
+    margin: 0 20px 12px 40px;
+
+}
+
+.ranking_song{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ranking_artist{
+    float: left;
+    color: #8D8D8D;
+    margin-left: 5px;
+}
+.ranking-text{
+    margin: 30px 0px 0px 20px;
+
+}
+.ranking_song{
+    float: left;
+    font-size: 20px;
+}
+.ranking-icon{
+    clear: both;
+    float: left;
+    margin: 0px 20px 0 40px;
+}
+.first{
+    color: #FFCC00;
+}
+.second{
+    color: #AAAAAA;
+}
+.third{
+    color: #AF7F6D;
+}
+.rank1{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.rank2{
+    margin-top: 100px;
+}
+.rank3{
+    margin: 200px 9px 9px 0;
+}
+/* TodayTop3_E*/
+/* Nowchart_S */
+.Nowchart{
+    width: 1320px;
+    margin: 0 auto;
+}
+.list_title {
+    margin: 70px 0 30px 0;
+
+}
+.Mainchart-line {
+    border-top: 3px solid #748FC9;
+    border-bottom: 3px solid #748FC9;
+    overflow: hidden;
+}
+
+.Main_chart {
+    height: 500px;
+    float: left;
+    margin-right: 20px;
+
+}
+
+.Main_chart:nth-child(2) {
+    margin-right: 0px;
+}
+
+.Main_chart-item {
+    width: 650px;
+    border-bottom: 1px solid #dedede;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main_chart-item:nth-child(5),
+.Main_chart-item:nth-child(10) {
+    border-bottom: none
+}
+
+.Main_chart-item:hover {
+    background-color: #F6F7FC;
+}
+
+.Mainchart_num {
+    font-size: 25px;
+    width: 20px;
+    text-align: center;
+}
+
+.Mainchart_num span {
+    color: #748FC9;
+}
+
+.Mainchart_thum {
+    margin-left: 20px;
+    width: 70px;
+}
+
+.Mainchart_thum img{
+    vertical-align: middle;
+}
+
+.Mainchart_song {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.Mainchart_artist {
+    width: 200px;
+    color: #8D8D8D;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Nowchart_E */
+/* Artist-list_S */
+.Artist-list_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.regular p{
+text-align: center;
+margin: 10px 30px 0 0;
+}
+/* Artist-list_E */
+/* Weekly-MV_S */
+.Weekly-MV_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+.Weekly-MV{
+    display: flex;
+    justify-content: space-between;
+}
+.Weekly-MV_list{
+    width: 240px;
+}
+.Weekly-MV_imgWrap{
+    position: relative;
+}
+.playbtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 80%;
+
+}
+.playbtn img{
+    height: 30px;
+    width: 30px;
+}
+.playbtn:hover {
+    opacity: 100%;
+
+}
+
+.Weekly-MV_text {
+    padding-top: 10px;
+    color: #748FC9;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.Weekly-MV_text span {
+    font-weight: bold;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* Weekly-MV_E */
